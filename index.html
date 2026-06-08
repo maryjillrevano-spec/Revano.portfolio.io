@@ -1,109 +1,209 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Mary Jill Y. Revano | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Link CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <img src="profile.jpg" class="profile-photo">
-    <h1>MARY JILL Y. REVANO</h1>
-    <p>Information Technology Student</p>
-</header>
-
+<!-- ── NAVIGATION ── -->
 <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#campaign-section">Business Promotions</a>
-    <a href="#contact">Contact</a>
+    <a href="#" class="nav-logo">MJR</a>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#campaign-section">Promotions</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
 </nav>
 
+<!-- ── HERO ── -->
+<header>
+    <div class="profile-ring">
+        <img src="profile.jpg" class="profile-photo" alt="Mary Jill Y. Revano">
+    </div>
+    <p class="hero-eyebrow">IT Student &amp; Developer</p>
+    <h1>Mary Jill Y.<br>Revano</h1>
+    <p class="hero-tagline">Web Development &nbsp;·&nbsp; Databases &nbsp;·&nbsp; Data Analysis</p>
+    <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+    </div>
+</header>
+
+<!-- ── ABOUT ── -->
 <section id="about">
-    <h2>About Me</h2>
-    <p>
-        I am an IT student passionate about web development and technology, database systems, and data analysis.
-        I enjoy creating responsive and user-friendly websites.
-    </p>
+    <div class="section-wrap">
+        <p class="section-label reveal">01 / About</p>
+        <h2 class="section-title reveal">A little about<br><em>me</em></h2>
+        <div class="about-grid reveal">
+            <div class="about-text">
+                <p>
+                    I am a 3rd year Bachelor of Science in Information Technology student at Eastern Visayas State University – Tanauan Campus, with a genuine passion for web development, database systems, and data analysis. I enjoy crafting responsive, user-friendly websites and exploring how technology can solve real-world problems. I'm always looking for opportunities to grow my skills and contribute to meaningful projects.
+                </p>
+            </div>
+            <div class="about-meta">
+                <div class="meta-item">
+                    <p class="meta-label">Degree</p>
+                    <p class="meta-value">B.S. Information Technology</p>
+                </div>
+                <div class="meta-item">
+                    <p class="meta-label">University</p>
+                    <p class="meta-value">EVSU – Tanauan Campus</p>
+                </div>
+                <div class="meta-item">
+                    <p class="meta-label">Year Level</p>
+                    <p class="meta-value">3rd Year</p>
+                </div>
+                <div class="meta-item">
+                    <p class="meta-label">Location</p>
+                    <p class="meta-value">Leyte, Philippines</p>
+                </div>
+                <div class="meta-item">
+                    <p class="meta-label">Status</p>
+                    <p class="meta-value">Open to Opportunities</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
+<!-- ── SKILLS ── -->
 <section id="skills">
-    <h2>Technical Skills</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Laravel</li>
-        <li>JavaScript</li>
-        <li>Basic Python</li>
-        <li>MySQL</li>
-    </ul>
+    <div class="section-wrap">
+        <p class="section-label reveal">02 / Skills</p>
+        <h2 class="section-title reveal">Technical<br><em>skills</em></h2>
+        <div class="skills-grid reveal">
+            <div class="skill-item">
+                <div class="skill-icon">🌐</div>
+                <p class="skill-name">HTML</p>
+                <p class="skill-level">Markup & Structure</p>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">🎨</div>
+                <p class="skill-name">CSS</p>
+                <p class="skill-level">Styling & Layout</p>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">⚙️</div>
+                <p class="skill-name">JavaScript</p>
+                <p class="skill-level">Interactivity</p>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">🔧</div>
+                <p class="skill-name">Laravel</p>
+                <p class="skill-level">PHP Framework</p>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">🐍</div>
+                <p class="skill-name">Python</p>
+                <p class="skill-level">Scripting & Analysis</p>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">🗄️</div>
+                <p class="skill-name">MySQL</p>
+                <p class="skill-level">Database Management</p>
+            </div>
+        </div>
+    </div>
 </section>
 
+<!-- ── PROJECTS ── -->
 <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-        <h3>Climate Change Forecasting System</h3>
-        <p>Developed a forecasting model using SARIMAX to analyze rice production in region 8.</p>
-    </div>
-
-    <div class="project">
-        <h3>Personal Blog Website</h3>
-        <p>A responsive blog website using HTML and CSS.</p>
+    <div class="section-wrap">
+        <p class="section-label reveal">03 / Projects</p>
+        <h2 class="section-title reveal">Selected<br><em>work</em></h2>
+        <div class="projects-list">
+            <div class="project-card reveal">
+                <div>
+                    <p class="project-number">Project 01</p>
+                    <h3>Personal Blog Website</h3>
+                    <p>Designed and built a fully responsive personal blog using HTML and CSS, with a focus on clean typography, mobile-first layout, and an accessible reading experience.</p>
+                    <span class="project-tag">HTML</span>
+                    <span class="project-tag">CSS</span>
+                    <span class="project-tag">Responsive Design</span>
+                </div>
+                <span class="project-arrow">↗</span>
+            </div>
+        </div>
     </div>
 </section>
 
+<!-- ── BUSINESS PROMOTIONS ── -->
 <section id="campaign-section">
-  <h2>Local Business Promotions</h2>
+    <div class="section-wrap">
+        <p class="section-label reveal">04 / Promotions</p>
+        <h2 class="section-title reveal">Local Business<br><em>campaigns</em></h2>
 
-   <!-- Brand Photo -->
-  <div class="brand">
-    <h3>Brand: Marra’s</h3>
-    <img src="images/marra-logo.jpg" alt="Marra's Logo" class="brand-photo">
-  </div>
+        <div class="brand-header reveal">
+            <img src="images/marra-logo.jpg" alt="Marra's Logo" class="brand-photo">
+            <div class="brand-info">
+                <h3>Marra's</h3>
+                <p>Local business brand identity & promotional campaign</p>
+            </div>
+        </div>
 
-  <!-- Brand Evaluation -->
-  <div class="brand-evaluation">
-    <h3>Brand Evaluation</h3>
-    <p>
-      The brand Marra’s presents a simple and eye-catching design that is easy to remember. 
-      The crown in the logo suggests quality and gives the impression that the brand offers 
-      something special or premium. The green color makes the design feel fresh and lively, 
-      which can attract customers. The “Since 2020” also helps show that the business has 
-      already been around for a few years, adding a sense of trust. However, the logo could 
-      be improved by making the glow effect less strong and choosing a clearer font so it is 
-      easier to read. Adding a short tagline could also help people understand what the brand 
-      is about. Overall, Marra’s has a good and appealing concept, but with a few small 
-      improvements, it can look more professional.
-    </p>
-  </div>
+        <div class="evaluation-block reveal">
+            <h3>Brand Evaluation</h3>
+            <p>
+                The brand Marra's presents a simple and eye-catching design that is easy to remember. The crown in the logo suggests quality and gives the impression that the brand offers something special or premium. The green color makes the design feel fresh and lively, which can attract customers. The "Since 2020" detail also helps show that the business has been around for a few years, adding a sense of trust. However, the logo could be improved by making the glow effect less strong and choosing a clearer font so it is easier to read. Adding a short tagline could also help people understand what the brand is about. Overall, Marra's has a good and appealing concept, but with a few small improvements, it can look more professional.
+            </p>
+        </div>
 
-  <!-- Campaign Images -->
-  <div class="campaign-gallery">
-    <figure>
-      <img src="images/Promotional Campaign.png" alt="Promotional Campaign">
-      <figcaption>Promotional Campaign</figcaption>
-    </figure>
-    
-    <figure>
-      <img src="images/Promotional Poster.png" alt="Promotional Poster">
-      <figcaption>Promotional Poster</figcaption>
-    </figure>
-  </div>
+        <div class="gallery-grid reveal">
+            <figure class="gallery-figure">
+                <img src="images/Promotional Campaign.png" alt="Promotional Campaign">
+                <figcaption>Promotional Campaign</figcaption>
+            </figure>
+            <figure class="gallery-figure">
+                <img src="images/Promotional Poster.png" alt="Promotional Poster">
+                <figcaption>Promotional Poster</figcaption>
+            </figure>
+        </div>
+    </div>
 </section>
 
+<!-- ── CONTACT ── -->
 <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: maryjillrevano@gmail.com</p>
+    <div class="section-wrap">
+        <div class="contact-inner">
+            <p class="section-label reveal" style="margin-bottom:8px;">05 / Contact</p>
+            <h2 class="section-title reveal">Let's work<br><em>together</em></h2>
+            <p class="reveal">Whether you have a project, an opportunity, or just want to say hello — my inbox is always open.</p>
+            <a href="mailto:maryjillrevano@gmail.com" class="contact-link reveal">
+                ✉ &nbsp; maryjillrevano@gmail.com
+            </a>
+        </div>
+    </div>
 </section>
 
+<!-- ── FOOTER ── -->
 <footer>
-    <p>© 2026 Mary Jill Y. Revano</p>
+    <span class="footer-copy">© 2026 Mary Jill Y. Revano</span>
+    <span class="footer-badge">Designed &amp; Built by MJR</span>
 </footer>
+
+<script>
+    // Scroll reveal
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+            if (entry.isIntersecting) {
+                entry.target.style.transitionDelay = (i % 3) * 0.1 + 's';
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12 });
+
+    revealEls.forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>
