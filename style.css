@@ -522,8 +522,8 @@ header h1 {
 
 .gallery-figure img {
     width: 100%;
-    height: 260px;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
     display: block;
     transition: transform 0.5s ease, opacity 0.3s;
     opacity: 0.9;
